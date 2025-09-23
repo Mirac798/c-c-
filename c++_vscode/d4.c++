@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+class Line{
+    public:
+        void setLength( double len );
+        double getLength( );
+        Line();     // This is the constructor
+        ~Line();    // This is the destructor
+    private:
+        double length;
+
+};
+
+
+Line::Line(void){
+    cout << "Object is being created" << endl;
+}
+
+Line::~Line(void){
+    cout << "Object is being deleted" << endl;
+}
+
+void Line::setLength( double len ){
+    length = len;
+}
+
+double Line::getLength( ){
+    return length;
+}
+
+int main() {
+    Line line;
+    line.setLength(3.14);
+    cout << "Length of line : " << line.getLength() << endl;
+  
+    return 0;
+}

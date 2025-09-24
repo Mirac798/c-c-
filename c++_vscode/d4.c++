@@ -13,11 +13,11 @@ class Line{
 };
 
 
-Line::Line(void){
+Line::Line(){
     cout << "Object is being created" << endl;
 }
 
-Line::~Line(void){
+Line::~Line(){
     cout << "Object is being deleted" << endl;
 }
 
